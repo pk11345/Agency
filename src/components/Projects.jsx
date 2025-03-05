@@ -5,7 +5,7 @@ const Projects = () => {
     <>
      <div className='pb-20 w-full pt-4  bg-gradient-to-t from-[#B804B1] to-transparent opacity-80 shadow-2xl shadow-[#B804B1]'>
     <div className="heading text-white flex justify-center  ">
-      <h1 className='text-5xl italic font-bold'>PROJECTS</h1>
+      <h1 className='md:text-5xl text-3xl  italic font-bold'>PROJECTS</h1>
     </div>
 
     <div className="containers flex flex-col justify-center items-center gap-10 pt-10 w-full h-[80%]">

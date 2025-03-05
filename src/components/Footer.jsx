@@ -17,7 +17,7 @@ const Footer = () => {
     <>
     <div className='pb-10 w-full pt-4   bg-gradient-to-t from-[#B804B1] to-transparent opacity-80'>
    <div className="heading text-white flex justify-center  ">
-   <h2 className='text-5xl italic font-bold'>Contact Us</h2>
+   <h2 className='md:text-5xl text-3xl  italic font-bold'>Contact Us</h2>
    </div>
      
       <div 
