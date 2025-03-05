@@ -12,7 +12,7 @@ const changeText = ["Website Development", "ReactJs", "MongoDB","ExpressJs"]
 
   return (
    <>
-   <div className="hero w-full h-[100vh]  relative  shadow-2xl shadow-[#B804B1] ">
+   <div className="hero w-full h-[80vh]  relative  shadow-2xl shadow-[#B804B1] ">
     <img className='heroimg h-[100%] w-full bg-gradient-to-t from-[#B804B1] to-transparent opacity-60 ' src="/HEro.jpg" alt="" />
     <div className='text-white  z-99 absolute top-0 w-full flex justify-center items-center h-[80%] '>
     <h1 className='md:flex gap-2 flex-wrap text-center items-center justify-center h-[50%] md:text-[40px] text-2xl  p-5 rounded-xl font-semibold'>
