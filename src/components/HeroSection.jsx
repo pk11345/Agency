@@ -1,14 +1,33 @@
-import React, {useState } from 'react'
+import React, {useEffect, useState } from 'react'
 
 const HeroSection = () => {
-const [text, settext] = useState([])
+const [text, settext] = useState("Website Development")
 
 const changeText = ["Website Development", "ReactJs", "MongoDB","ExpressJs"]
 
 
+const [cnt , setCnt] = useState(0);
 
+const call = ()=>{
+  if(cnt == changeText.length)
+  {
+  setCnt(0);
+  }else
+  {
+    settext(changeText[cnt]);
+    console.log(changeText[cnt],cnt);
+   setCnt(cnt+1)
+  }
+}
 
-
+useEffect(()=>{
+ let interval = setInterval(()=>{
+    call();
+    },3000)
+    return(()=>{
+      clearInterval(interval)
+    })
+},[cnt])
 
   return (
    <>
@@ -19,7 +38,7 @@ const changeText = ["Website Development", "ReactJs", "MongoDB","ExpressJs"]
        <span >Most</span>
        <span>Trusted</span>
         <span className='shadow-2xl shadow-[#fca1a1] text-[#B804B1] flex
-         bg-slate-200 italic font-bold'><span>Website</span> <span>Development</span> </span>
+         bg-slate-200 italic font-bold'><span>{text}</span> </span>
          <span>Service </span> 
          <span>Provider</span>
          </h1>
